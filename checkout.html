@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа - БлинБери</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/nominatim-browser/dist/nominatim-browser.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="БлинБери Логотип" class="logo">
+        <button class="cart-button" onclick="location.href='cart.html'">Корзина</button>
+    </header>
+
+    <main>
+        <h1>Оформление заказа</h1>
+        <div id="map" style="height: 400px;"></div>
+        <div class="summary">
+            <h2>Итоговая сумма: <span id="total-amount">0 ₽</span></h2>
+            <button class="checkout-button">Заказать</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="contact-info">
+            <p>Телефон: +7 (123) 456-78-90</p>
+            <p>Email: info@blinberi.ru</p>
+            <p>Адрес: г. Москва, ул. Блинная, д. 1</p>
+        </div>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

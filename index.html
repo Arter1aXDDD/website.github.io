@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БлинБери</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="images/logo.png" alt="БлинБери Логотип" class="logo">
+        <button class="cart-button" onclick="openCart()">Корзина</button>
+    </header>
+
+    <main>
+        <section class="carousel" id="savory-pancakes">
+            <h2>Сытные блины</h2>
+            <div class="carousel-container"></div>
+        </section>
+        <section class="carousel" id="sweet-pancakes">
+            <h2>Сладкие блины</h2>
+            <div class="carousel-container"></div>
+        </section>
+        <section class="carousel" id="snacks">
+            <h2>Закуски</h2>
+            <div class="carousel-container"></div>
+        </section>
+        <section class="carousel" id="drinks">
+            <h2>Напитки</h2>
+            <div class="carousel-container"></div>
+        </section>
+
+        <button class="cart-button-bottom" onclick="openCart()">Перейти в корзину</button>
+    </main>
+
+    <footer class="footer">
+        <div class="contact-info">
+            <p>Телефон: +7 (800) 550-22-20</p>
+            <p>Email: ask@blinberry.team</p>
+            <p>Адрес: г. Волгоград, ул. Чуйкова, д. 37</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <div class="modal-product-info">
+                <img id="modal-product-image" src="" alt="Product Image">
+                <div class="modal-product-details">
+                    <h2 id="modal-product-name"></h2>
+                    <p id="modal-product-price"></p>
+                    <p id="modal-product-description"></p>
+                </div>
+            </div>
+            <button id="modal-add-button" onclick="confirmAddToCart()">Добавить</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
